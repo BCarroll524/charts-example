@@ -6,6 +6,8 @@ const Home = () => {
       <Link to="/nivo">Nivo</Link>
       <br />
       <Link to="/tanner">Tanner React-Charts</Link>
+      <br />
+      <Link to="/vis">React-Vis (Uber, Deprecated)</Link>
     </div>
   );
 };
