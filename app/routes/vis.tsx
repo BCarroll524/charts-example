@@ -1,4 +1,6 @@
+import { Link } from "@remix-run/react";
 import React from "react";
+import { ArrowLeft } from "react-feather";
 import {
   XYPlot,
   XAxis,
@@ -42,6 +44,13 @@ export default class DynamicCrosshair extends React.Component {
   render() {
     return (
       <>
+        <Link to="/">
+          <ArrowLeft size={20} />
+        </Link>
+        <h3>
+          Deprecated, uses class syntax for hover interactions, requires script
+          and style imports, responsivity is a pain.
+        </h3>
         <XYPlot
           onMouseLeave={() => this.setState({ crosshairValues: [] })}
           width={1000}
